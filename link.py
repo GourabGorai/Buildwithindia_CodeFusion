@@ -2,15 +2,13 @@ import json
 import requests
 
 # Put API Key here
-API_KEY = "AIzaSyBjejfQ6TVdqmWgjFSPGGZRD1xLCXJ2sng"
+API_KEY = ""
 
 # YouTube API Search Endpoint
 SEARCH_URL = "https://www.googleapis.com/youtube/v3/search"
 
 # Channel IDs (Replace/Add more if needed)
 informative_channels = [
-    "UCin0m13qWv3-051xlWlHamA",  # Veritasium
-    "UCsXVk37bltHxD1rDPwtNM8Q"   # Kurzgesagt – In a Nutshell
 ]
 timewaste_channels = [
 ]
@@ -20,7 +18,7 @@ def get_video_links(channel_id):
     params = {
         "part": "snippet",
         "channelId": channel_id,
-        "maxResults": 10,
+        "maxResults": 10, # Set it
         "type": "video",
         "order": "date",
         "key": API_KEY
