@@ -475,4 +475,5 @@ def index():
     return render_template('index.html', predicted_prices=predicted_prices, actual_prices=actual_prices,
                            error_message=error_message, future_prediction=future_prediction, accuracy_score=accuracy_score)   
 
+if __name__ == '__main__':
 
