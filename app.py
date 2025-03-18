@@ -476,4 +476,4 @@ def index():
                            error_message=error_message, future_prediction=future_prediction, accuracy_score=accuracy_score)   
 
 if __name__ == '__main__':
-
+    app.run(debug=True)
